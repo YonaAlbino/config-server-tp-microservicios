@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: carrito-service
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3307/servicioCarrito?useSSL=false&serverTimezone=UTC
+    username: root
+    password: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8082
